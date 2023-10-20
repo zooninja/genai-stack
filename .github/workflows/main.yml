@@ -23,6 +23,6 @@ jobs:
       - name: Docker build
         uses: docker/build-push-action@v4
         with:
-          file: ./bot.Dockerfile
+          file: ./loader.Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: axionsdocker32/bot:latest
+          tags: axionsdocker32/loader:latest
